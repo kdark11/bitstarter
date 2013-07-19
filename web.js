@@ -3,7 +3,7 @@ var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
-app.use(express.static(__dirname + '/styles'));
+app.use("/styles", express.static(__dirname + '/styles'));
 
 app.get('/', function(request, response) {
   var buf = new Buffer(256);
