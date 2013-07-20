@@ -8,7 +8,17 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 /* Large desktop */
-@media (min-width: 1200px) { ... }
+@media (min-width: 980px) {
+  body {
+    padding-top: 60px;
+  }
+  .linediv-l {
+    border-right: 1px white solid;
+  }
+  .linediv-r {
+    border-left: 1px white solid;
+  } 
+}
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { ... }
@@ -17,18 +27,42 @@
 @media (max-width: 767px) { ... }
  
 /* Landscape phones and down */
-@media (max-width: 480px) { ... }
+@media (max-width: 480px) {
+  .copy {
+    padding: 2.5% 10%;
+  }
+  .linediv-l {
+    border-bottom: 1px white solid;
+  }
+  .linediv-r {
+    border-top: 1px white solid;
+  } 
+}
+
+/* All Form Factors */
+/* Main body and headings */
 
  body {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   }
-  .container {
-    width: 960px;
+
+  .heading, .subheading {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    text-align: center;
   }
+
   p.lead {
-    padding-top: 15px;
+    padding-top: 1.5%;
+    font-size: 24px;
+    line-height: 30px;
   }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  /* Video pitch and action */
+
   .navigation, .pitch, .section1, .section2, .faq, .footer {
     padding: 10px 0px 10px 0px;
   }
